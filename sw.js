@@ -1,5 +1,6 @@
-const CACHE_NAME = 'lifepulse-v2';
-const ASSETS = ['./', './index.html', './app.js', './manifest.json'];
+const CACHE_NAME = 'lifepulse-v3';
+const BASE = '/dipoz/';
+const ASSETS = [BASE, BASE + 'index.html', BASE + 'app.js', BASE + 'manifest.json'];
 
 self.addEventListener('install', e => {
     e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(ASSETS)));
