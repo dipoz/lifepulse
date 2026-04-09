@@ -1,4 +1,4 @@
-const CACHE_NAME = 'lifepulse-v4';
+const CACHE_NAME = 'lifepulse-v5';
 const BASE = '/dipoz/';
 const ASSETS = [BASE, BASE + 'index.html', BASE + 'app.js', BASE + 'manifest.json'];
 
