@@ -266,8 +266,8 @@
                     <div class="space-y-2">
                         <div class="flex gap-2 text-xs text-gray-400 dark:text-gray-500 px-1">
                             <span class="w-5"></span>
-                            <span class="flex-1">Weight (kg)</span>
-                            <span class="flex-1">Reps</span>
+                            <span class="flex-1 min-w-0">Weight (kg)</span>
+                            <span class="flex-1 min-w-0">Reps</span>
                             <span class="w-7"></span>
                             <span class="w-5"></span>
                         </div>
@@ -278,12 +278,12 @@
                                        :value="getSetWeight(ex.id, setNum)"
                                        @change="logSet(ex.id, setNum, 'weight', $event.target.value)"
                                        :placeholder="ex.weight || '—'"
-                                       class="flex-1 px-2 py-1.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none">
+                                       class="flex-1 min-w-0 px-2 py-1.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none">
                                 <input type="number" step="1"
                                        :value="getSetReps(ex.id, setNum)"
                                        @change="logSet(ex.id, setNum, 'reps', $event.target.value)"
                                        :placeholder="ex.reps"
-                                       class="flex-1 px-2 py-1.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none">
+                                       class="flex-1 min-w-0 px-2 py-1.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none">
                                 <button @click="toggleSetDone(ex.id, setNum)"
                                         class="w-7 h-7 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0"
                                         :class="isSetDone(ex.id, setNum)
