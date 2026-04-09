@@ -3,7 +3,7 @@
     "short_name": "LifePulse",
     "start_url": "/dipoz/",
     "scope": "/dipoz/",
-    "display": "standalone",
+    "display": "browser",
     "background_color": "#f9fafb",
     "theme_color": "#6366f1",
     "icons": [
